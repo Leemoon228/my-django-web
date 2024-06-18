@@ -86,14 +86,14 @@ a {
   width: 100%;
   padding: 40px 0;
   position: fixed;
-  top: -280px;
+  top: -480px;
   left: 0;
   background-color: #21243d;
   -webkit-box-shadow: 0 1px 10px #08090f;
   box-shadow: 0 1px 10px #08090f;
 }
 .header__menu ul {
-  height: 300px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,7 +901,7 @@ input:-internal-autofill-selected {
   }
   @-webkit-keyframes menu-down {
     0% {
-      top: -380px;
+      top: -480px;
     }
     100% {
       top: 0;
@@ -909,7 +909,7 @@ input:-internal-autofill-selected {
   }
   @keyframes menu-down {
     0% {
-      top: -380px;
+      top: -480px;
     }
     100% {
       top: 0;
@@ -920,7 +920,7 @@ input:-internal-autofill-selected {
       top: 0;
     }
     100% {
-      top: -380px;
+      top: -480px;
     }
   }
   @keyframes menu-up {
@@ -928,7 +928,7 @@ input:-internal-autofill-selected {
       top: 0;
     }
     100% {
-      top: -380px;
+      top: -480px;
     }
   }
   .main {
