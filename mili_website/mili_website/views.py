@@ -5,8 +5,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 def index(request):
     return render(request, 'index.html')
-    template = loader.get_template('index.html')
-    return HttpResponse(template.render({}, request))
 def blog(request):
         return render(request, 'blog.html')
 def works(request):
@@ -14,8 +12,6 @@ def works(request):
 def lyrics(request):
         return render(request, 'lyrics.html')
 
-def ax2023(request):
-        return render(request, 'AX2023.html')
 
 class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = 'accounts/profile.html'
