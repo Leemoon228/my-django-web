@@ -32,7 +32,7 @@ urlpatterns = [
 
     path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('index.html', TemplateView.as_view(template_name="index.html"), name="index"),
-    path('AX2023.html', TemplateView.as_view(template_name="AX2023.html"), name="AX2023"),
+    path('AX2021.html', TemplateView.as_view(template_name="AX2021.html"), name="AX2021"),
     path('blog.html', TemplateView.as_view(template_name="blog.html"), name="blog"),
     path('gunner.html', TemplateView.as_view(template_name="gunner.html"), name="gunner"),
     path('key-ing.html', TemplateView.as_view(template_name="key-ing.html"), name="key-ing"),
