@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block head %}
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Key Ingredient</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div class="header">
+    <div class="header__container">
+        <ul class="header__ul">
+            <li class="header__li"><a href="index.html">Главная</a></li>
+            <li class="header__li"><a href="blog.html">Блог</a></li>
+            <li class="header__li"><a href="works.html" class="active">Альбомы</a></li>
+            <li class="header__li"><a href="lyrics.html">Текст песни</a></li>
+            {% include 'AuthButton.html' %}
+        </ul>
+        <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+        <div class="header__menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="works.html" class="active">Альбомы</a></li>
+                <li><a href="lyrics.html">Текст песни</a></li>
+            </ul>
+            <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+        </div>
+    </div>
+</div>
+<div class="key-ing wrap-2">
+    <h1>Key Ingredient</h1>
+    <p class="key-ing__text">Это захватывающий альбом группы Mili, смешивающий жанры и создающий уникальное звучание.
+        Мелодичные треки и интригующие тексты делают его ярким и запоминающимся опытом, переворачивая представление о музыке. </p>
+    <div class="thumb-wrap">
+        <iframe src="https://www.youtube.com/embed/z0VWenh7kwU" title="YouTube video player1"></iframe>
+    </div>
+    <h2>Key Ingredient (Instrumental)</h2>
+
+    <p class="key-ing__text">Инструментальная версия повторяет первый альбом, но без вокала. Наслаждайтесь!</p>
+    <div class="thumb-wrap">
+        <iframe src="https://www.youtube.com/embed/SCbbxnjosSA" title="YouTube video player2"></iframe>
+    </div>
+    <div class="thumb-wrap">
+        <iframe class="band-player" src="https://bandcamp.com/EmbeddedPlayer/album=1480760638/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/">
+            <a href="https://project-mili.bandcamp.com/album/key-ingredient">Key Ingredient by Mili</a></iframe>
+    </div>
+
+</div>
+<div class="footer wrap-1">
+    <div class="footer__social">
+        <a href="https://www.last.fm/ru/music/Mili">A</a>
+        <a href="https://project-mili.bandcamp.com/">B</a>
+        <a href="https://www.youtube.com/@ProjectMili">D</a>
+        <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+    </div>
+    <div style="text-align: center;">All rights reserved.</div>
+</div>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+<script src="/static/scripts/app.min.js"></script>
+
+</body>
+{% endblock %}

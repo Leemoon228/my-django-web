@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Блог</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+    <div class="header">
+        <div class="header__container">
+            <ul class="header__ul">
+                <li class="header__li"><a href="index.html" >Главная</a></li>
+                <li class="header__li"><a href="blog.html" class="active">Блог</a></li>
+                <li class="header__li"><a href="works.html">Альбомы</a></li>
+                <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+                {% include 'AuthButton.html' %}
+            </ul>
+            <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+            <div class="header__menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="blog.html" class="active">Блог</a></li>
+                    <li><a href="works.html">Альбомы</a></li>
+                    <li><a href="lyrics.html">Поиск песни</a></li>
+                </ul>
+                <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+            </div>
+        </div>
+    </div>
+    <div class="blog wrap-2">
+        <h1>Блог</h1>
+        <div class="blog__block">
+            <h2><a href="AX2023.html">Концерт в Лос Анджелесе на Anime Expo 2023</a></h2>
+            <p class="blog__block-info">02 Июля 2023 | <a>Америка, Лос-Анджелес</a></p>
+            <p class="blog__block-text">На фестивале AnimeExpo будут выступать Cö shu Nie известные по аниме "Токийские мстители" и "Токийский Гуль", а также Mili известные по по "Призрак в доспехах", "Убийца гоблинов".</p>
+        </div>
+        <div class="blog__block">
+            <h2><a href="pyrcone.html">Концерт в Польше на Pyrkon 2023</a></h2>
+            <p class="blog__block-info">17 Июня 2023 | <a>Польша, Познань</a></p>
+            <p class="blog__block-text">Pyrkon 2023 - ежегодный фестиваль поп культуры в Познани, на который приглашают не мало интересных групп большого спектра жанров. И в этом году Mili выступали там тоже!</p>
+        </div>
+        <div class="blog__block">
+            <h2><a href="gunner.html">Gunners in the Rain</a></h2>
+            <p class="blog__block-info">24 Мая 2023 | <a>Deemo 2, Ритм-игра</a></p>
+            <p class="blog__block-text">Новый сингл Mili: Мощная и эмоциональная песня, сочетающая мрачность и нежность в совершенной гармонии. Написана для ритм игры Deemo 2</p>
+        </div>
+        <div class="blog__block">
+            <h2><a href="pictures.html">Новые официальные фото группы</a></h2>
+            <p class="blog__block-info">7 мая 2023 | <a>Япония, Токио</a></p>
+            <p class="blog__block-text"> Были сняты новые фото для представления группы во всех соц-сетях.</p>
+        </div>
+    </div>
+    <div class="footer wrap-1">
+        <div class="footer__social">
+            <a href="https://www.last.fm/ru/music/Mili">A</a>
+            <a href="https://project-mili.bandcamp.com/">B</a>
+            <a href="https://www.youtube.com/@ProjectMili">D</a>
+            <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+        </div>
+        <div style="text-align: center;">All rights reserved.</div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+    <script src="/static/scripts/app.min.js"></script>
+</body>
+{% endblock %}

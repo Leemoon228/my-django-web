@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>AX23 Concert</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div class="header">
+    <div class="header__container">
+        <ul class="header__ul">
+            <li class="header__li"><a href="index.html">Главная</a></li>
+            <li class="header__li"><a href="blog.html" class="active">Блог</a></li>
+            <li class="header__li"><a href="works.html">Альбомы</a></li>
+            <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+            {% include 'AuthButton.html' %}
+        </ul>
+        <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+        <div class="header__menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html" class="active">Блог</a></li>
+                <li><a href="works.html">Альбомы</a></li>
+                <li><a href="lyrics.html">Поиск песни</a></li>
+            </ul>
+            <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+        </div>
+    </div>
+</div>
+    <div class="work-1 wrap-2">
+        <h1>Anime Expo 2023</h1>
+        <p class="work-1__text">Anime Expo (AX) стартовала в 1991 году как “Anime Con” членами аниме-клуба Калифорнийского университета в Беркли, Cal Animage Alpha.
+            Несмотря на то, что за прошедшие годы AX значительно вырос, основная цель осталась прежней: обеспечить посетителям веселый и запоминающийся опыт.
+            Каждый год Anime Expo собирает фанатов и представителей индустрии из Японии, США и всего мира на крупнейшее празднование японской поп-культуры в Северной Америке.
+            На выставке Anime Expo представлено все лучшее в области японских развлечений, музыки, моды и видеоигр.
+        </p>
+        <img class="first__img" src="/static/images/dest/AX2023-banner.png" alt="design-1">
+        <h2>Anime Expo Summer Fest</h2>
+        <p class="work-1__text">
+            Непосредственная концертная часть проходящего фестиваля.
+            <br>Среди выступающих на сцене будут: Cö shu Nie, Mili, Mii, Yameii Online, Mirei и Welksie. Непосредоственно Mili анонсировали новый альбом "Lets Lament" и показали обложку, нарисованную их арт дизайнером.
+        </p>
+        <img src="/static/images/dest/upcoming-album.jpeg" alt="new album">
+    </div>
+    <div class="footer wrap-1">
+        <div class="footer__social">
+            <a href="https://www.last.fm/ru/music/Mili">A</a>
+            <a href="https://project-mili.bandcamp.com/">B</a>
+            <a href="https://www.youtube.com/@ProjectMili">D</a>
+            <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+        </div>
+        <div style="text-align: center;">All rights reserved.</div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+    <script src="/static/scripts/app.min.js"></script>
+
+</body>
+{% endblock %}

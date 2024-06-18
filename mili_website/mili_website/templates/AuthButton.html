@@ -1,0 +1,19 @@
+<body>
+{% if user.is_authenticated %}
+{% url 'profile' as profile_url %}
+<li class="header__li">Здравствуйте {% if request.path == profile_url %}{{user.username}}{% else %}<a href="{{ profile_url }}">{{user.username}}</a>{% endif %}!</li>
+<li > 
+    <form action="{% url 'logout' %}" method="post" id="LogInOrOut">
+        {% csrf_token %}
+        <li class="header__li" onclick="submitform()"><a href="#">Выйти</a></li>
+    </form>  
+</li>
+
+{% else %}
+<li> 
+    <form action="{% url 'login' %}" id="LogInOrOut">
+        <li class="header__li" onclick="submitform()"><a href="#">Зайти</a></li>
+    </form>
+</li>
+{% endif %}
+</body>

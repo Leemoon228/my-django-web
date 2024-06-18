@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block head %}
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>To Kill a Living Book</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div class="header">
+    <div class="header__container">
+        <ul class="header__ul">
+            <li class="header__li"><a href="index.html">Главная</a></li>
+            <li class="header__li"><a href="blog.html">Блог</a></li>
+            <li class="header__li"><a href="works.html" class="active">Альбомы</a></li>
+            <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+            {% include 'AuthButton.html' %}
+        </ul>
+        <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+        <div class="header__menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="works.html" class="active">Альбомы</a></li>
+                <li><a href="lyrics.html">Поиск песни</a></li>
+            </ul>
+            <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+        </div>
+    </div>
+</div>
+<div class="key-ing wrap-2">
+    <h1>To Kill a Living Book</h1>
+    <p class="key-ing__text">«To Kill a Living Book -for Library Of Ruina-» — захватывающий альбом японской музыкальной группы Mili, созданный специально для видеоигры «Library of Ruina».
+        Погружает слушателей в темный и таинственный  мир, альбом представляет собой симбиоз красивой электронной музыки, смешанной с мрачными и атмосферными звуковыми эффектами.
+        Разнообразные саундтреки в этом альбоме отражают темы и атмосферу игры, создавая уникальное путешествие в разум и душу игрока. Невероятные мелодии и звуковые текстуры подчеркивают
+        сюжет игры и переносят нас  в уникальный мир «Library of Ruina», полный тайн и опасностей.
+        "To Kill a Living Book" - это музыка, которая выражает эмоции, страхи и атмосферу игрового процесса, даря слушателям незабываемые впечатления и запечатлевая их в памяти. </p>
+    <div class="thumb-wrap">
+        <iframe class="video" src="https://www.youtube.com/embed/KXBKkDMTdxo" title="YouTube video player1"></iframe>
+    </div>
+    <div class="thumb-wrap">
+        <iframe class="band-player" src="https://bandcamp.com/EmbeddedPlayer/album=2453992089/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/"></iframe></div>
+</div>
+<div class="footer wrap-1">
+    <div class="footer__social">
+        <a href="https://www.last.fm/ru/music/Mili">A</a>
+        <a href="https://project-mili.bandcamp.com/">B</a>
+        <a href="https://www.youtube.com/@ProjectMili">D</a>
+        <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+    </div>
+    <div style="text-align: center;">All rights reserved.</div>
+
+</div>
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+<script src="/static/scripts/app.min.js"></script>
+
+</body>
+{% endblock %}

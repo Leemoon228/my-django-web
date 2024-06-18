@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Альбомы</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+    <div class="header">
+        <div class="header__container">
+            <ul class="header__ul">
+                <li class="header__li"><a href="index.html" >Главная</a></li>
+                <li class="header__li"><a href="blog.html" >Блог</a></li>
+                <li class="header__li"><a href="works.html" class="active">Альбомы</a></li>
+                <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+                {% include 'AuthButton.html' %}
+            </ul>
+            <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+            <div class="header__menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="works.html" class="active">Альбомы</a></li>
+                    <li><a href="lyrics.html">Поиск песни</a></li>
+                </ul>
+                <img class="close-btn"src="/static/images/dest/close.svg" alt="close">
+            </div>
+        </div>
+    </div>
+    <div class="work wrap-2">
+        <h1>Альбомы</h1>
+        <div class="work__blocks">
+            <div class="work__block">
+                <a href="key-ing.html"  class="work__image-a"><img src="/static/images/dest/featured-1.jpg" class="work__image"></a>
+                <div class="work__text__block">
+                    <h2><a href="key-ing.html">Key Ingredient</a></h2>
+                    <div class="info">
+                        <p class="year">2022</p>
+                        <p class="theme"><a>Альбом</a></p>
+                    </div>
+                    <p class="text">Один из последних альбомов, включает в себя 13
+                        лучших песен с прошлых альбомов, исполненными дуэтом вокала и фортепиано. Также имеет полную инструментальную версию. </p>
+                </div>
+            </div>
+            <div class="work__block">
+                <a href="miracle.html" class="work__image-a"><img src="/static/images/dest/featured-2.jpg" class="work__image"></a>
+                <div class="work__text__block">
+                    <h2><a href="miracle.html">Miracle Milk</a></h2>
+                    <div class="info">
+                        <p class="year">2016</p>
+                        <p class="theme"><a>Альбом</a></p>
+                    </div>
+                    <p class="text">Второй альбом Mili, выпущенный 12 октября 2016 года. Он содержит 18 песен и одну секретную песню. Ограниченное
+                        премиум издание включает в себя 18 оригинальных художественно оформленных иллюстрированных открыток с текстами песен, на которых изображен волшебный мир Mili.</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <a href="library.html"  class="work__image-a"><img src="/static/images/dest/featured-3.jpg" class="work__image"></a>
+                <div class="work__text__block">
+                    <h2><a href="library.html">To Kill A Living Book</a></h2>
+                    <div class="info">
+                        <p class="year">2021</p>
+                        <p class="theme"><a>Игра</a></p>
+                    </div>
+                    <p class="text">Часть музыки из игры Library of Ruina. написали и исполнили Mili.
+                        To Kill A Living Book — альбом, выпущенный 29 октября 2021 года. </p>
+
+                </div>
+            </div>
+            <div class="work__block">
+                <a href="mag-mell.html"  class="work__image-a"><img src="/static/images/dest/featured-4.jpg" class="work__image"></a>
+                <div class="work__text__block">
+                    <h2><a href="mag-mell.html">Mag Mell</a></h2>
+                    <div class="info">
+                        <p class="year">2014</p>
+                        <p class="theme"><a>Альбом</a></p>
+                    </div>
+                    <p class="text">Mag Mell" Mili — захватывающий дебютный альбом выпущенный 17 сентября 2014 года. Сочетает очаровательные мелодии с эмоциональной глубиной, создавая поистине завораживающее музыкальное впечатление.
+                        Содержит 13 песен.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer wrap-1">
+        <div class="footer__social">
+            <a href="https://www.last.fm/ru/music/Mili">A</a>
+            <a href="https://project-mili.bandcamp.com/">B</a>
+            <a href="https://www.youtube.com/@ProjectMili">D</a>
+            <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+        </div>
+        <div style="text-align: center;">All rights reserved.</div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+    <script src="/static/scripts/app.min.js"></script>
+</body>
+
+{% endblock %}

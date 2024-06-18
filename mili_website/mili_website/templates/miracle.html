@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block head %}
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Miracle Milk</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div class="header">
+    <div class="header__container">
+        <ul class="header__ul">
+            <li class="header__li"><a href="index.html">Главная</a></li>
+            <li class="header__li"><a href="blog.html">Блог</a></li>
+            <li class="header__li"><a href="works.html" class="active">Альбомы</a></li>
+            <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+            {% include 'AuthButton.html' %}
+        </ul>
+        <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+        <div class="header__menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="works.html" class="active">Альбомы</a></li>
+                <li><a href="lyrics.html">Поиск песни</a></li>
+            </ul>
+            <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+        </div>
+    </div>
+</div>
+<div class="key-ing wrap-2">
+    <h1>Miracle Milk</h1>
+    <p class="key-ing__text">Прошло 2 года с момента выхода предыдущего альбома Mili Mag Mell.
+        Второй альбом Mili Miracle Milk, любимый поклонниками по всему миру, будет включать песни из популярной ритм-игры Deemo, такие как «YIBIKIRI-GENMAN» и «Space Colony», а также их новые хиты на Youtube, такие как «world.execute(me)» и «Ga1ahad and Scientific Witchery».
+        Помимо хитов, включены также и неизданные треки, которых нет больше нигде, в результате чего общее количество треков составляет 18.
+        <br> Издание Limited Premium Package Edition включает 18 художественно нарисованных оригинальных иллюстрированных карточек с текстами песен, изображающих волшебный мир Мили. </p>
+    <div class="thumb-wrap">
+        <iframe class="video" src="https://www.youtube.com/embed/U2XELiosoWw" title="YouTube video player1" frameborder="0"></iframe>
+    </div>
+    <div class="thumb-wrap">
+    <iframe class="band-player" src="https://bandcamp.com/EmbeddedPlayer/album=1993589480/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/"><a href="https://project-mili.bandcamp.com/album/mag-mell">Mag Mell by Mili</a></iframe>
+    </div>
+</div>
+<div class="footer wrap-1">
+    <div class="footer__social">
+        <a href="https://www.last.fm/ru/music/Mili">A</a>
+        <a href="https://project-mili.bandcamp.com/">B</a>
+        <a href="https://www.youtube.com/@ProjectMili">D</a>
+        <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+    </div>
+    <div style="text-align: center;">All rights reserved.</div>
+</div>
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+<script src="/static/scripts/app.min.js"></script>
+
+</body>
+{% endblock %}

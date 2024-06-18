@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block head %}
+<head>
+    <title>Фото</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div class="header">
+    <div class="header__container">
+        <ul class="header__ul">
+            <li class="header__li"><a href="index.html">Главная</a></li>
+            <li class="header__li"><a href="blog.html" class="active">Блог</a></li>
+            <li class="header__li"><a href="works.html">Альбомы</a></li>
+            <li class="header__li"><a href="lyrics.html">Поиск песни</a></li>
+            {% include 'AuthButton.html' %}
+        </ul>
+        <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+        <div class="header__menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html" class="active">Блог</a></li>
+                <li><a href="works.html">Альбомы</a></li>
+                <li><a href="lyrics.html">Поиск песни</a></li>
+            </ul>
+            <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+        </div>
+    </div>
+</div>
+    <div class="work-1 wrap-2">
+        <h1>Новый фотосет</h1>
+        <p class="work-1__text">Были отсняты новые фото для представления группы на мероприятиях и в соц-сетях.
+            <br>Фотограф: TOKI
+            <br>Художественное направление и реквизит: Q.i @Quuuuuuuui
+            <br>Макияж и прическа: Аями Асано и Юка Судзуки
+            <br>Костюмирование: Cassie Wei (вокилист группы)
+
+        </p>
+        Общее фото группы:
+        <img class="first__img" src="/static/images/dest/mili-band.jfif" alt="design-1">
+        Фото Cassie Wei:
+        <img class="first__img" src="/static/images/dest/Cassie.jfif" alt="design-1">
+
+
+    </div>
+    <div class="footer wrap-1">
+        <div class="footer__social">
+            <a href="https://www.last.fm/ru/music/Mili">A</a>
+            <a href="https://project-mili.bandcamp.com/">B</a>
+            <a href="https://www.youtube.com/@ProjectMili">D</a>
+            <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+        </div>
+        <div style="text-align: center;">All rights reserved.</div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+    <script src="/static/scripts/app.min.js"></script>
+</body>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block head %}
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Поиск песни</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/dest/Mili_Logo.ico">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/app.min.css">
+</head>
+{% endblock %}
+{% block content %}
+<body>
+<div>
+    <div class="header">
+        <div class="header__container">
+            <ul class="header__ul">
+                <li class="header__li"><a href="index.html">Главная</a></li>
+                <li class="header__li"><a href="blog.html">Блог</a></li>
+                <li class="header__li"><a href="works.html" >Альбомы</a></li>
+                <li class="header__li"><a href="lyrics.html" class="active">Поиск песни</a></li>
+                {% include 'AuthButton.html' %}
+            </ul>
+            <img class="header__menu-btn" src="/static/images/dest/menu.svg" alt="menu">
+            <div class="header__menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="works.html">Альбомы</a></li>
+                    <li><a href="lyrics.html" class="active">Поиск песни</a></li>
+                </ul>
+                <img class="close-btn" src="/static/images/dest/close.svg" alt="close">
+            </div>
+        </div>
+    </div>
+    <div class="key-ing wrap-2">
+        <h1 class="title">Поиск песни</h1>
+
+        <div class="container">
+            <form id="form" class="search-bar" autocomplete="off">
+                <input type="text" id="search"  placeholder="Введите название трека">
+                <button><img alt="search icon" class="search-ico"  src="/static/images/dest/search.png"></button>
+            </form>
+        </div>
+
+        <div ></div>
+        <div id="video-container" style="height: 0">
+            <iframe id="video" class="video" title="YouTube video player1" src=""></iframe>
+        </div>
+        <div class="result" id="result">
+            <h1></h1>
+
+        </div>
+
+        <strong></strong>
+    </div>
+    <div class="footer wrap-1">
+        <div class="footer__social">
+            <a href="https://www.last.fm/ru/music/Mili">A</a>
+            <a href="https://project-mili.bandcamp.com/">B</a>
+            <a href="https://www.youtube.com/@ProjectMili">D</a>
+            <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs?si=twayvS7hQJ6TF6ywIKG37w">E</a>
+        </div>
+        <div style="text-align: center;">All rights reserved.</div>
+    </div>
+
+</div>
+    <script type="module">
+
+    </script>
+<script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.md5.js"></script>
+<script type="text/javascript" src="/static/scripts/lastfm.api.js"></script>
+<script src="/static/scripts/app.min.js"></script>
+</body>
+{% endblock %}
